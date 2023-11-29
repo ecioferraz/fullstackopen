@@ -25,7 +25,7 @@ export default function App() {
   const part3 = 'State of a component'
   const exercises3 = 14
 
-  const data = {
+  const content = {
     exercises: {
       exercises1,
       exercises2,
@@ -42,9 +42,9 @@ export default function App() {
     <div>
       <Header course={course} />
 
-      <Content {...data} />
+      <Content {...content} />
 
-      <Total exercises={data.exercises} />
+      <Total exercises={content.exercises} />
     </div>
   )
 }
